@@ -1,0 +1,151 @@
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+#header{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100px;
+    position: relative;
+    background-color: rgb(31, 26, 26);
+    z-index: 1;
+    align-items: center;
+}
+
+#homeBtn{
+    position: relative;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    font-size: 29px;
+    left: 20px;
+}
+
+#homeBtn:hover{
+    color: black;
+}
+
+#metaBtn{
+    position: relative;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    font-size: 29px;
+    left: 1500px;
+}
+
+#metaBtn:hover{
+    color: black;
+}
+
+
+#herosBody{
+    display: flex;
+    flex-direction: row;
+}
+
+.heros{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 500px;
+    height: 90vh;
+    align-self: flex-start;
+    background-size: cover;
+    background-position: 50% 50%;    
+    border: 5px solid #fff;
+    align-items: center;
+    opacity: 1;
+    color: beige;
+}
+
+#lars{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(lars\ hero\ 2.png);
+}
+#kristoffer{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(kristoffer\ hero.png);
+}
+#emelie{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(Emelie\ hero\ cartoon\ 1.png);
+}
+#fredrik{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(fredrik\ hero3.png);
+}
+
+
+#larsText{
+    position: relative;
+    width: 500px;
+    height: 100vh;
+    font-family: Herotenn;
+    font-size: 130px;
+    left: 30px;
+}
+
+#lars:hover{
+    opacity: 1;
+    background-image: url(lars\ hero\ 2.png);
+    color: transparent;
+    padding: 20px;
+}
+
+
+
+#kristofferText{
+    position: relative;
+    width: 500px;
+    height: 100vh;
+    font-family: Herotenn;
+    font-size: 130px;
+    left: 30px;
+}
+
+
+#kristoffer:hover{
+    opacity: 1;
+    background-image: url(kristoffer\ hero.png);
+    color: transparent;
+    padding: 20px;
+}
+
+
+
+
+
+#emelieText{
+    position: relative;
+    width: 500px;
+    height: 100vh;
+    font-family: Herotenn;
+    font-weight: bold;
+    font-size: 170px;
+    left: 20px;
+}
+
+#emelie:hover{
+    opacity: 1;
+    background-image: url(Emelie\ hero\ cartoon\ 1.png);
+    color: transparent;
+    padding: 20px;
+}
+
+
+
+#fredrikText{
+    position: relative;
+    width: 500px;
+    height: 100vh;
+    font-family: Herotenn;
+    font-size: 130px;
+    left: 60px;
+}
+
+#fredrik:hover{
+    opacity: 1;
+    background-image: url(fredrik\ hero3.png);
+    color: transparent;
+    padding: 20px;
+}
