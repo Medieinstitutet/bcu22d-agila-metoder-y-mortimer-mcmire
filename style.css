@@ -4,6 +4,12 @@ body{
     flex-direction: column;
 }
 
+#content{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
 #header{
     display: flex;
     flex-direction: row;
@@ -15,25 +21,20 @@ body{
     align-items: center;
 }
 
-#homeBtn{
+.buttons{
     position: relative;
     color: #fff;
     background-color: transparent;
     border: none;
     font-size: 29px;
-    left: 20px;
+    margin: 20px;
 }
 
-#homeBtn:hover{
+.buttons:hover{
     color: black;
 }
 
 #metaBtn{
-    position: relative;
-    color: #fff;
-    background-color: transparent;
-    border: none;
-    font-size: 29px;
     left: 1500px;
 }
 
@@ -45,6 +46,7 @@ body{
 #herosBody{
     display: flex;
     flex-direction: row;
+    width: 100vw;
 }
 
 .heros{
@@ -52,100 +54,68 @@ body{
     flex-direction: column;
     align-self: center;
     width: 500px;
-    height: 90vh;
+    height: 50vh;
     align-self: flex-start;
     background-size: cover;
     background-position: 50% 50%;    
     border: 5px solid #fff;
     align-items: center;
+    margin: 100px;
     opacity: 1;
     color: beige;
 }
 
 #lars{
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(lars\ hero\ 2.png);
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(/Images/lars\ hero\ 2.png);
 }
 #kristoffer{
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(kristoffer\ hero.png);
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(/Images/kristoffer\ hero.png);
 }
 #emelie{
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(Emelie\ hero\ cartoon\ 1.png);
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(/Images/Emelie\ hero\ cartoon\ 1.png);
 }
 #fredrik{
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(fredrik\ hero3.png);
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(/Images/fredrik\ hero3.png);
 }
 
-
-#larsText{
-    position: relative;
-    width: 500px;
-    height: 100vh;
-    font-family: Herotenn;
-    font-size: 130px;
-    left: 30px;
+#alexander{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url();
 }
+
 
 #lars:hover{
     opacity: 1;
-    background-image: url(lars\ hero\ 2.png);
+    background-image: url(/Images/lars\ hero\ 2.png);
     color: transparent;
     padding: 20px;
-}
-
-
-
-#kristofferText{
-    position: relative;
-    width: 500px;
-    height: 100vh;
-    font-family: Herotenn;
-    font-size: 130px;
-    left: 30px;
 }
 
 
 #kristoffer:hover{
     opacity: 1;
-    background-image: url(kristoffer\ hero.png);
+    background-image: url(/Images/kristoffer\ hero.png);
     color: transparent;
     padding: 20px;
-}
-
-
-
-
-
-#emelieText{
-    position: relative;
-    width: 500px;
-    height: 100vh;
-    font-family: Herotenn;
-    font-weight: bold;
-    font-size: 170px;
-    left: 20px;
 }
 
 #emelie:hover{
     opacity: 1;
-    background-image: url(Emelie\ hero\ cartoon\ 1.png);
+    background-image: url(/Images/Emelie\ hero\ cartoon\ 1.png);
     color: transparent;
     padding: 20px;
 }
 
 
-
-#fredrikText{
-    position: relative;
-    width: 500px;
-    height: 100vh;
-    font-family: Herotenn;
-    font-size: 130px;
-    left: 60px;
-}
-
 #fredrik:hover{
     opacity: 1;
-    background-image: url(fredrik\ hero3.png);
+    background-image: url(/Images/fredrik\ hero3.png);
+    color: transparent;
+    padding: 20px;
+}
+
+#alexander:hover{
+    opacity: 1;
+    background-image: url();
     color: transparent;
     padding: 20px;
 }
