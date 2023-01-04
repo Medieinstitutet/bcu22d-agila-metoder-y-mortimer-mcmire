@@ -4,6 +4,12 @@ body{
     flex-direction: column;
 }
 
+#content{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
 #header{
     display: flex;
     flex-direction: row;
@@ -40,6 +46,7 @@ body{
 #herosBody{
     display: flex;
     flex-direction: row;
+    width: 100vw;
 }
 
 .heros{
@@ -59,22 +66,26 @@ body{
 }
 
 #lars{
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(lars\ hero\ 2.png);
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(/Images/lars\ hero\ 2.png);
 }
 #kristoffer{
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(kristoffer\ hero.png);
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(/Images/kristoffer\ hero.png);
 }
 #emelie{
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(Emelie\ hero\ cartoon\ 1.png);
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(/Images/Emelie\ hero\ cartoon\ 1.png);
 }
 #fredrik{
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(fredrik\ hero3.png);
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(/Images/fredrik\ hero3.png);
+}
+
+#alexander{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url();
 }
 
 
 #lars:hover{
     opacity: 1;
-    background-image: url(lars\ hero\ 2.png);
+    background-image: url(/Images/lars\ hero\ 2.png);
     color: transparent;
     padding: 20px;
 }
@@ -82,14 +93,14 @@ body{
 
 #kristoffer:hover{
     opacity: 1;
-    background-image: url(kristoffer\ hero.png);
+    background-image: url(/Images/kristoffer\ hero.png);
     color: transparent;
     padding: 20px;
 }
 
 #emelie:hover{
     opacity: 1;
-    background-image: url(Emelie\ hero\ cartoon\ 1.png);
+    background-image: url(/Images/Emelie\ hero\ cartoon\ 1.png);
     color: transparent;
     padding: 20px;
 }
@@ -97,7 +108,14 @@ body{
 
 #fredrik:hover{
     opacity: 1;
-    background-image: url(fredrik\ hero3.png);
+    background-image: url(/Images/fredrik\ hero3.png);
+    color: transparent;
+    padding: 20px;
+}
+
+#alexander:hover{
+    opacity: 1;
+    background-image: url();
     color: transparent;
     padding: 20px;
 }
