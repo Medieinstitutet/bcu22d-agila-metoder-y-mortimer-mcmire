@@ -81,7 +81,7 @@ export default async function header(){
         for (let tokenAddress of tokenAddresses) {
             const contract = new web3.eth.Contract(erc20AbiJson, tokenAddress);
             // const tokenBalance = await contract.methods.balanceOf(myAddress).call();
-            const tokenBalance = await contract.methods.balanceOf("0x523a36AD73C402e456F49B04F0fe8eBA5A8C85CD").call();
+            const tokenBalance = await contract.methods.balanceOf(account).call();
             if (tokenBalance > 0) {
                 switch (tokenAddress) {
                     case "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599":
