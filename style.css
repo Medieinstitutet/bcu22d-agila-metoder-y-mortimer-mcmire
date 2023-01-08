@@ -119,3 +119,7 @@ body{
     color: transparent;
     padding: 20px;
 }
+
+li {
+    color: white;
+}

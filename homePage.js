@@ -1,3 +1,7 @@
+// import getTopGainersTopLosers from "./getTopGainersTopLosers.js";
+import printTopMovers from "./printTopMovers.js";
+
+
 export default function homePage(){
     const herosBody = document.createElement("div");
     herosBody.id = "herosBody";
@@ -43,5 +47,7 @@ export default function homePage(){
 
     fredrik.addEventListener("click", ()=>{
         herosBody.remove();
+        // getTopGainersTopLosers();
+        printTopMovers();
     })
 }
