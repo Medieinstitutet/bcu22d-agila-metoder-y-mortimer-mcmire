@@ -1,6 +1,11 @@
 ## Sprint planning
 -Vi tog in 6 tasks med sammanlagt 11 story points i sprinten.
 
+## Retrospective
+-Flera i teamet hade haft utmaningar med att hitta releventa API:er för sina uppgifter.
+-CORS-problem var också ett återkommande tema.
+-Vi är glada över bra samarbete och struktur i teamet.
+
 ## Daily standup
 ### onsdag
 - Tasksen "Create first index.html", "Göra om HTML till JS i index" samt "Användaren ska kunna connecta via metamask" är klara.
