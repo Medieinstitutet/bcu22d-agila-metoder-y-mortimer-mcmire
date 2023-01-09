@@ -381,9 +381,8 @@ template {
 #content .gridDiv {
   background-color: #232323;
   color: #e0e0e0;
+  padding: 10px;
 }
-#content .col {
-  display: block;
-  grid-column: 1/span 2;
-  padding: 0;
+#content .gridDiv h2 {
+  margin-top: 0;
 }/*# sourceMappingURL=main.css.map */
