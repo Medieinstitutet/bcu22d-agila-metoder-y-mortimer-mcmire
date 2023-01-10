@@ -1,9 +1,6 @@
-// const web3 = new Web3(Web3.givenProvider || "ws://localhost:8545");
 import { erc20AbiJson } from "./erc20AbiJson.js";
 import { account } from "./header.js";
-import header from "./header.js";
 const web3 = new Web3(Web3.givenProvider || "ws://localhost:8545");
-// import showTokenBalances from "./tokenBalances.js";
 
 console.log("erc20AbiJson", erc20AbiJson);
 
@@ -22,14 +19,10 @@ export default async function tokenBalances() {
         "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599", //WBTC
     ];
     
-    // console.log("account from listTokens", account);
-    // const myAddress = account;
-    
     
 
     for (let tokenAddress of tokenAddresses) {
         const contract = new web3.eth.Contract(erc20AbiJson, tokenAddress);
-        // const tokenBalance = await contract.methods.balanceOf(myAddress).call();
         const tokenBalance = await contract.methods.balanceOf(account).call();
         if (tokenBalance > 0) {
             switch (tokenAddress) {
@@ -65,8 +58,6 @@ export default async function tokenBalances() {
                     break;
             }
         }
-        
-        
         
     }
 }
