@@ -1,6 +1,8 @@
 import createWallet from "./modules/wallet.js";
 import tokenBalances from "./tokenBalances.js";
 import { walletDiv } from "./modules/wallet.js";
+import main from "./nftImage.js";
+import nftTop from "./nftTop.js";
 
 export let account = "";
 export let balance;
@@ -32,6 +34,7 @@ export default function header(){
             account = accounts[0];
             console.log("connected account", account);
             button.textContent = account;
+      
 
             ethereum.request({method: 'eth_getBalance', params: [account, 'latest']}).then(result => {
                 console.log("result", result);
@@ -43,6 +46,8 @@ export default function header(){
             });
             
             tokenBalances();
+            main();
+            nftTop();
         });
         
     });
