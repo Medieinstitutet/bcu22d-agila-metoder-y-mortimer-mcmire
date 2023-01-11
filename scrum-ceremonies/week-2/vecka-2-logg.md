@@ -12,3 +12,8 @@
 ### tisdag
 - Samtliga jobbar vidare med samma tasks som dagen innan.
 - Små problem hade uppstått som kunde lösas under standup.
+
+### onsdag
+- Vissa tasks är klara så vi hjälps åt att pusha till main.
+- 5 tasks flyttas till done.
+- "Backa ihop värde i SEK/USD med tokens held by users" dras in i sprinten.
