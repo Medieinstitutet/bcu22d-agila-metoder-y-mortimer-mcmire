@@ -63,3 +63,31 @@
         }
     }
 }
+
+
+
+// FARMS.JS & ICONFARMS.JS
+
+#icons{
+    width: 50px;
+    // background-color: #ffffff;
+    border: 1px solid #000000;
+}
+
+#iconDiv{
+    margin-top: 50px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+a{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;  
+}
+
+a:hover{
+    color: #000000;
+}
