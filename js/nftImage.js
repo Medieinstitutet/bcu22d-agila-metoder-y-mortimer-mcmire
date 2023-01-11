@@ -1,6 +1,6 @@
 import {account} from "./header.js";
 
-export default async function main() {
+export default async function nftImage() {
 
   const options = {
     method: 'GET',

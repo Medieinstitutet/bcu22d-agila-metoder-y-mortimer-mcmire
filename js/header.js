@@ -1,7 +1,7 @@
 import createWallet from "./modules/wallet.js";
 import tokenBalances from "./tokenBalances.js";
 import { walletDiv } from "./modules/wallet.js";
-import main from "./nftImage.js";
+import nftImage from "./nftImage.js";
 import nftTop from "./nftTop.js";
 
 export let account = "";
@@ -46,7 +46,7 @@ export default function header(){
             });
             
             tokenBalances();
-            main();
+            nftImage();
             nftTop();
         });
         
