@@ -1,3 +1,10 @@
+import createWallet from "./modules/wallet.js";
+import tokenBalances from "./tokenBalances.js";
+import { walletDiv } from "./modules/wallet.js";
+
+export let account = "";
+export let balance;
+
 export default function header(){
     const header = document.getElementById("header");
 
@@ -19,7 +26,7 @@ export default function header(){
 
     //Sign in meta mask 
     document.getElementById('metaBtn').addEventListener('click', event => {
-        let account;
+        // let account;
         let button = event.target;
         ethereum.request({method: 'eth_requestAccounts'}).then(accounts => {
             account = accounts[0];
@@ -29,12 +36,14 @@ export default function header(){
             ethereum.request({method: 'eth_getBalance', params: [account, 'latest']}).then(result => {
                 console.log("result", result);
                 let wei = parseInt(result,16);
-                let balance = wei / (10**18);
+                balance = wei / (10**18);
                 console.log("Balance in ETH", balance);
-                let balanceElement = document.createElement("p");
-                document.body.appendChild(balanceElement);
-                balanceElement.innerHTML = 'Your balance ETH-balance is: ' + balance.toFixed(4);
+                walletDiv.innerHTML = `<h2>Wallet</h2>
+                Ether : ${balance.toFixed(4)}<br>`;
             });
+            
+            tokenBalances();
         });
+        
     });
 }
