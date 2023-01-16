@@ -1,4 +1,13 @@
-export default function header(){
+import createWallet from "./modules/createWallet.js";
+import tokenBalances from "./tokenBalances.js";
+import { walletDiv } from "./modules/createWallet.js";
+import nftImage from "./nftImage.js";
+import nftTop from "./nftTop.js";
+
+export let account = "";
+
+
+export default function header() {
     const header = document.getElementById("header");
 
     const homeBtn = document.createElement("button");
@@ -13,7 +22,7 @@ export default function header(){
     metaBtn.innerText = "SIGN IN WITH META MASK";
     header.appendChild(metaBtn);
 
-    homeBtn.addEventListener("click", ()=>{
+    homeBtn.addEventListener("click", () => {
         document.location.reload()
     })
 
@@ -21,20 +30,13 @@ export default function header(){
     document.getElementById('metaBtn').addEventListener('click', event => {
         let account;
         let button = event.target;
-        ethereum.request({method: 'eth_requestAccounts'}).then(accounts => {
+        ethereum.request({ method: 'eth_requestAccounts' }).then(accounts => {
             account = accounts[0];
             console.log("connected account", account);
             button.textContent = account;
-
-            ethereum.request({method: 'eth_getBalance', params: [account, 'latest']}).then(result => {
-                console.log("result", result);
-                let wei = parseInt(result,16);
-                let balance = wei / (10**18);
-                console.log("Balance in ETH", balance);
-                let balanceElement = document.createElement("p");
-                document.body.appendChild(balanceElement);
-                balanceElement.innerHTML = 'Your balance ETH-balance is: ' + balance.toFixed(4);
-            });
+            tokenBalances();
+            createFiat();
         });
+
     });
 }
