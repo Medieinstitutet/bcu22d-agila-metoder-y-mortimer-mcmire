@@ -41,8 +41,8 @@ export default async function createFiat() {
                 //console.log(tokenArray[i])
                 let tokenSymbol = tokenArray[i].slice(0, tokenArray[i].indexOf(": "));
                 tokenSymbol = tokenSymbol.toLowerCase();
-                if (tokenSymbol == "ETHER") {
-                    tokenSymbol = "ETH"
+                if (tokenSymbol == "ether") {
+                    tokenSymbol = "eth"
                 }
                 //console.log(`Token Symbol: ${tokenSymbol}`);
                 let tokenAmount = tokenArray[i].slice(tokenArray[i].indexOf(": ") + 2);
