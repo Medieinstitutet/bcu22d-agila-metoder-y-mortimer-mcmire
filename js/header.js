@@ -2,7 +2,13 @@
 import tokenBalances from "./tokenBalances.js";
 import { walletDiv } from "./modules/wallet.js";
 import nftImage from "./nftImage.js";
+
 // import nftTop from "./nftTop.js";
+
+
+import homePage from "./homePage.js";
+import removeHomePageBeforeLogin from "./modules/removeHomePageBeforeLogin.js";
+
 
 export let account = "";
 export let balance;
@@ -44,7 +50,8 @@ export default function header() {
                 walletDiv.innerHTML = `<h2>Wallet</h2>
                 Ether: ${balance.toFixed(4)}<br>`;
             });
-
+            removeHomePageBeforeLogin();
+            homePage();
             tokenBalances();
             nftImage();
         });
