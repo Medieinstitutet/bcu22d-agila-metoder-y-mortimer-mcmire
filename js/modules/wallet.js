@@ -8,9 +8,7 @@ export default function createWallet() {
     walletDiv.classList.add("gridDiv");
     console.log("balance from wallet.js", balance);
     walletDiv.innerHTML = `<h2>Wallet</h2>
-    Ether : ${balance}<br>
-    Tether : 24<br>
-    Chainlink : 0.02`;
+    Please sign in with Meta Mask`;
     walletDiv.style.gridArea = "wallet";
     contentDiv.appendChild(walletDiv);
 }
