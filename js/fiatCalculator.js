@@ -27,11 +27,13 @@ export default async function fiatCalculator(symbol, amount, fiatSymbol) {
     //Find it in coin list
     let coinInfo = {};
     if (symbol == "eth") {
+        console.log("checking eth");
         coinInfo = coinList.find(coin => {
             return coin.id == "ethereum";
         });
     }
     else {
+        console.log(symbol);
         coinInfo = coinList.find(coin => {
             return coin.symbol == symbol;
         });
