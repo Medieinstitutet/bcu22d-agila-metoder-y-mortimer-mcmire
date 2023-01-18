@@ -1,7 +1,7 @@
 //If published publically, coingecko usage needs to be disclosed on site
 //https://www.coingecko.com/en/branding
 //For example, "Data provided by CoinGecko", "Data from CoinGecko" or "Powered by CoinGecko"
-// import { coinList } from "./modules/coinGeckoCoinList.js";
+import { coinList } from "./modules/fiat.js";
 
 //variable/function names needs to be rethought
 export default async function fiatCalculator(symbol, amount, fiatSymbol) {
@@ -25,9 +25,19 @@ export default async function fiatCalculator(symbol, amount, fiatSymbol) {
     //Go through coins in user wallet
     //for (let currency in walletValues) {
     //Find it in coin list
-    let coinInfo = coinList.find(coin => {
-        return coin.symbol == symbol;
-    });
+    let coinInfo = {};
+    if (symbol == "eth") {
+        console.log("checking eth");
+        coinInfo = coinList.find(coin => {
+            return coin.id == "ethereum";
+        });
+    }
+    else {
+        console.log(symbol);
+        coinInfo = coinList.find(coin => {
+            return coin.symbol == symbol;
+        });
+    }
     // console.log("coinInfo", coinInfo);
 
     //Create link for getting coin-SEK exchange rate
