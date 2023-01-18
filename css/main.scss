@@ -41,10 +41,10 @@
     position: relative;
     padding: 10px;
     grid-template-areas:
-        'wallet     fiat    topmove    nft    nft'
-        'wallet     fiat    topmove    nft    nft'
-        'farms        free1     topmove    nft    nft'
-        'farms        free1     free2    nft    nft';
+        'wallet     fiat    topnft    nft    nft'
+        'wallet     fiat    topnft    nft    nft'
+        'farms      topmove topnft    nft    nft'
+        'farms      topmove topnft    nft    nft';
     // grid-template-areas:
     //     'wallet     fiat    topmove    free1    farms'
     //     'wallet     fiat    topmove    free1    farms'
@@ -68,13 +68,13 @@
 
 // FARMS.JS & ICONFARMS.JS
 
-#icons{
+#icons {
     width: 50px;
     // background-color: #ffffff;
     border: 1px solid #000000;
 }
 
-#iconDiv{
+#iconDiv {
     margin-top: 50px;
     width: 300px;
     display: flex;
@@ -82,12 +82,12 @@
     flex-wrap: wrap;
 }
 
-a{
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 20px;  
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
 }
 
-a:hover{
+a:hover {
     color: #000000;
 }
