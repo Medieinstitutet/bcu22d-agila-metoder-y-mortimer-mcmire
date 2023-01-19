@@ -24,13 +24,15 @@ export default function nftTop() {
       contentDiv.appendChild(topNftDiv);
 
       let title = document.createElement("h2");
-      title.innerText = "Top selling NFT-collections";
+      title.innerText = "Trending NFT-collections - 24h";
+      title.style.textAlign = "center";
       topNftDiv.appendChild(title);
 
       for (let i = 0; i < nftData.length; i++) {
         let nft = nftData[i];
         let div = document.createElement("div");
-        div.innerHTML = `<br> ${i + 1}. ${nft.name} <br> <img src="${nft.thumbnail_image}" width = "100px" height = "auto"/> `;
+        div.innerHTML = `${i + 1}. ${nft.name} <img src="${nft.thumbnail_image}" width = "100px" max-height = "auto"/> `;
+        div.classList = "nftTop"
         topNftDiv.appendChild(div);
       }
 

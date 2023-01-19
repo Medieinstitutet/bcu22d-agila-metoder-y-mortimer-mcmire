@@ -7,7 +7,8 @@ export default async function createTopmovers() {
     let topFiveMovers = await createTopFiveMovers();
     let bottomFiveMovers = await createBottomFiveMovers();
     topmoveDiv.classList.add("gridDiv");
-    topmoveDiv.innerHTML = `<h2>Top movers</h2>`;
+    topmoveDiv.innerHTML = `<h2>Top movers - 24h</h2>`;
+    topmoveDiv.style.textAlign = "center";
     // Ether : +5%<br>
     // Tether : +5%<br>
     // Chainlink : +5%`;

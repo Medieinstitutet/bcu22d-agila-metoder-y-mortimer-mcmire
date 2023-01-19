@@ -5,7 +5,7 @@ import { coinList } from "./modules/fiat.js";
 
 //variable/function names needs to be rethought
 export default async function fiatCalculator(symbol, amount, fiatSymbol) {
-    // console.log("Start of fiatCalculator()");
+    console.log("Start of fiatCalculator()");
     localStorage.setItem(symbol + fiatSymbol, "started")
     // console.log(`symbol: ${symbol}
     // amount: ${amount}
@@ -38,7 +38,7 @@ export default async function fiatCalculator(symbol, amount, fiatSymbol) {
             return coin.symbol == symbol;
         });
     }
-    // console.log("coinInfo", coinInfo);
+    console.log("coinInfo", coinInfo);
 
     //Create link for getting coin-SEK exchange rate
 

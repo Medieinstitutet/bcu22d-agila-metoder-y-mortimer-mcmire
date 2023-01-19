@@ -57,10 +57,12 @@
         background-color: #232323;
         color: #e0e0e0;
         padding: 10px;
+        overflow: auto;
 
         h2 {
             margin-top: 0;
         }
+
     }
 }
 
@@ -90,4 +92,32 @@ a {
 
 a:hover {
     color: #000000;
+}
+
+.green-numbers {
+    color: rgb(12, 236, 12);
+}
+
+.red-numbers {
+    color: rgb(255, 79, 79);
+}
+
+.nftTop {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.TopFiveMovers {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.BottomFiveMovers {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
 }
