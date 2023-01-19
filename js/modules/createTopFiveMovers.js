@@ -11,7 +11,7 @@ export default async function createTopFiveMovers() {
 
     topFive.forEach((item) => {
         const li = document.createElement('li');
-        li.innerHTML = ` ${item.id}: <span class="green-numbers">$${item.price_change_percentage_24h.toFixed(1)}%</span>`;
+        li.innerHTML = ` ${item.id}: <span class="green-numbers">${item.price_change_percentage_24h.toFixed(1)}%</span>`;
         li.classList = "TopFiveMovers";
         topMoversList.appendChild(li);
     });

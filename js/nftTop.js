@@ -24,7 +24,7 @@ export default function nftTop() {
       contentDiv.appendChild(topNftDiv);
 
       let title = document.createElement("h2");
-      title.innerText = "Top selling NFT-collections - 24h";
+      title.innerText = "Trending NFT-collections - 24h";
       title.style.textAlign = "center";
       topNftDiv.appendChild(title);
 

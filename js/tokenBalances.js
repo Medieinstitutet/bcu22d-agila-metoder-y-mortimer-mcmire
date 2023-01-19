@@ -20,7 +20,8 @@ export default async function tokenBalances() {
         "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599", //WBTC
         "0x0000000000A39bb272e79075ade125fd351887Ac", //ETH in Blur Pool
         "0xE41d2489571d322189246DaFA5ebDe1F4699F498",  //ZRX
-        "0x514910771AF9Ca656af840dff83E8264EcF986CA"
+        "0x514910771AF9Ca656af840dff83E8264EcF986CA",  //Link
+        "0xB1f1F47061A7Be15C69f378CB3f69423bD58F2F8" //Flash
     ];
 
 
@@ -66,9 +67,9 @@ export default async function tokenBalances() {
                 case "0xE41d2489571d322189246DaFA5ebDe1F4699F498":
                     walletDiv.insertAdjacentHTML("beforeend", `ZRX: ${tokenBalance / (10 ** 18)}<br>`);
                     break;
-                    
-
-                    
+                case "0xB1f1F47061A7Be15C69f378CB3f69423bD58F2F8":
+                    walletDiv.insertAdjacentHTML("beforeend", `Flash: ${(tokenBalance / (10 ** 18)).toFixed(4)}<br>`);
+                    break;
                 case "0x0000000000A39bb272e79075ade125fd351887Ac":
                     walletDiv.insertAdjacentHTML("beforeend", `ETH in Blur Pool: ${tokenBalance / (10 ** 18)}<br>`);
             }
