@@ -64,7 +64,7 @@ export default async function createFiat() {
                     else {
                         let localStorageValue = localStorage.getItem(tokenSymbol + "sek");
                         if (localStorageValue != "started") {
-                            fiatValues[tokenSymbol] = localStorageValue;
+                            fiatValues[tokenSymbol] = Math.floor(localStorageValue);
                         }
                     }
                     //console.log("Added", tokenSymbol, fiatValues[tokenSymbol]);

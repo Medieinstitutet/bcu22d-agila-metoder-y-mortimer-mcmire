@@ -23,12 +23,16 @@ export default async function nftImage() {
             imageUrl = `https://ipfs.io/ipfs/${ipfsHash}`
             console.log(imageUrl)
           }
-          imageHTML += `<img src="${imageUrl}" style="width: 300px; height: auto;">`;
+          imageHTML += `<img src="${imageUrl}" style="width: auto; max-height: 250px; margin: 20px;">`;
 
         }
       }
       let contentDiv = document.getElementById("content");
       let nftDiv = document.createElement("div");
+      let header = document.createElement("h2");
+      header.style.textAlign = "center";
+      nftDiv.appendChild(header);
+      header.innerHTML = "Held NFTs"
       nftDiv.classList.add("gridDiv");
       nftDiv.innerHTML += imageHTML;
       nftDiv.style.gridArea = "nft";
