@@ -1,0 +1,123 @@
+@import "normalize.scss";
+
+* {
+    box-sizing: border-box;
+}
+
+#header {
+    display: relative;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    background-color: rgb(31, 26, 26);
+    z-index: 1;
+
+    .buttons {
+        position: relative;
+        margin: auto;
+        color: #ffffff;
+        background-color: transparent;
+        border: none;
+        font-size: 29px;
+        margin-left: 20px;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    .buttons:hover {
+        color: #c9c9c9;
+    }
+
+    #metaBtn {
+        position: absolute;
+        right: 15px;
+    }
+}
+
+#content {
+    background-color: #494949;
+    display: grid;
+    position: relative;
+    padding: 10px;
+    grid-template-areas:
+        'wallet     fiat    topnft    nft    nft'
+        'wallet     fiat    topnft    nft    nft'
+        'farms      topmove topnft    nft    nft'
+        'farms      topmove topnft    nft    nft';
+    // grid-template-areas:
+    //     'wallet     fiat    topmove    free1    farms'
+    //     'wallet     fiat    topmove    free1    farms'
+    //     'nft        nft     topmove    free1    farms'
+    //     'nft        nft     free2    free2    free2';
+    gap: 10px;
+    height: calc(100vh - 100px);
+
+    .gridDiv {
+        background-color: #232323;
+        color: #e0e0e0;
+        padding: 10px;
+        overflow: auto;
+
+        h2 {
+            margin-top: 0;
+        }
+
+    }
+}
+
+
+
+// FARMS.JS & ICONFARMS.JS
+
+#icons {
+    width: 50px;
+    // background-color: #ffffff;
+    border: 1px solid #000000;
+}
+
+#iconDiv {
+    margin-top: 50px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+a:hover {
+    color: #000000;
+}
+
+.green-numbers {
+    color: rgb(12, 236, 12);
+}
+
+.red-numbers {
+    color: rgb(255, 79, 79);
+}
+
+.nftTop {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.TopFiveMovers {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.BottomFiveMovers {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}

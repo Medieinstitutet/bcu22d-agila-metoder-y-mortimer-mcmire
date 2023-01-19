@@ -1,0 +1,121 @@
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+#content{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+#header{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100px;
+    position: relative;
+    background-color: rgb(31, 26, 26);
+    z-index: 1;
+    align-items: center;
+}
+
+.buttons{
+    position: relative;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    font-size: 29px;
+    margin: 20px;
+}
+
+.buttons:hover{
+    color: black;
+}
+
+#metaBtn{
+    left: 1500px;
+}
+
+#metaBtn:hover{
+    color: black;
+}
+
+
+#herosBody{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+.heros{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 500px;
+    height: 50vh;
+    align-self: flex-start;
+    background-size: cover;
+    background-position: 50% 50%;    
+    border: 5px solid #fff;
+    align-items: center;
+    margin: 100px;
+    opacity: 1;
+    color: beige;
+}
+
+#lars{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(/Images/lars\ hero\ 2.png);
+}
+#kristoffer{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(/Images/kristoffer\ hero.png);
+}
+#emelie{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(/Images/Emelie\ hero\ cartoon\ 1.png);
+}
+#fredrik{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(/Images/fredrik\ hero3.png);
+}
+
+#alexander{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url();
+}
+
+
+#lars:hover{
+    opacity: 1;
+    background-image: url(/Images/lars\ hero\ 2.png);
+    color: transparent;
+    padding: 20px;
+}
+
+
+#kristoffer:hover{
+    opacity: 1;
+    background-image: url(/Images/kristoffer\ hero.png);
+    color: transparent;
+    padding: 20px;
+}
+
+#emelie:hover{
+    opacity: 1;
+    background-image: url(/Images/Emelie\ hero\ cartoon\ 1.png);
+    color: transparent;
+    padding: 20px;
+}
+
+
+#fredrik:hover{
+    opacity: 1;
+    background-image: url(/Images/fredrik\ hero3.png);
+    color: transparent;
+    padding: 20px;
+}
+
+#alexander:hover{
+    opacity: 1;
+    background-image: url();
+    color: transparent;
+    padding: 20px;
+}
